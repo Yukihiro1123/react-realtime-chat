@@ -7,7 +7,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import { Menu, MenuItem, Typography } from "@mui/material";
-import chatLogo from "../img/chat-application-logo-template-business-branding-design-vector-chatting-communication-text/chatlogo.jpg";
+import chatLogo from "../img/chatlogo.jpg";
 
 const Chat = () => {
   const { data } = useContext(ChatContext);
