@@ -17,6 +17,7 @@ import {
 } from "firebase/firestore";
 
 const Input = ({ reply, handleReplyClose }) => {
+  console.log(reply);
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
   const [text, setText] = useState("");
@@ -94,6 +95,7 @@ const Input = ({ reply, handleReplyClose }) => {
   return (
     <div className="input">
       {/* メッセージフォーム */}
+      {/* リプライ */}
       {reply?.id && (
         <div className="reply__message">
           <div style={{ marginLeft: "10px" }}>
@@ -103,6 +105,9 @@ const Input = ({ reply, handleReplyClose }) => {
             <Typography variant="body2" sx={{ color: "white" }}>
               {reply.text}
             </Typography>
+            {reply.image && (
+              <img src={reply?.image} alt="replyImg" height="20" />
+            )}
           </div>
           <CloseIcon onClick={handleReplyClose} />
         </div>
