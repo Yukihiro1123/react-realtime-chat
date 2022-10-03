@@ -2,14 +2,14 @@ import { useState, useContext, useRef, useEffect } from "react";
 import { Avatar, Menu, MenuItem, Typography } from "@mui/material";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
-import {
-  doc,
-  updateDoc,
-  deleteDoc,
-  arrayRemove,
-  deleteField,
-} from "firebase/firestore";
-import { db } from "../firebase";
+// import {
+//   doc,
+//   updateDoc,
+//   deleteDoc,
+//   arrayRemove,
+//   deleteField,
+// } from "firebase/firestore";
+// import { db } from "../firebase";
 
 const Message = ({ message, handleReply, handleReplyScroll }) => {
   const { currentUser } = useContext(AuthContext);

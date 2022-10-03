@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase";
 import {
-  getStorage,
+  //getStorage,
   ref,
   uploadBytesResumable,
   getDownloadURL,
 } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { Backdrop, CircularProgress, Typography } from "@mui/material";
-import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+//import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
