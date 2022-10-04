@@ -4,9 +4,15 @@ React + firebase
 
 https://main--melodic-cendol-6c373e.netlify.app/
 
-##　機能
+#　機能
 
 ### firebase を用いた認証（ログイン、サインイン、ログアウト）
+
+| username       | password |
+| -------------- | -------- |
+| john@gmail.com | 123123   |
+| jane@gmail.com | 456456   |
+| jack@gmail.com | 789789   |
 
 ## メッセージ送信・画像送信
 
